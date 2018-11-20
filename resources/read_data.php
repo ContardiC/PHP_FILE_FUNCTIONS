@@ -16,7 +16,7 @@ if($fp==null) {
 }else{
     $data=fread($fp,filesize($filePath.$fileName));
     $array=explode(";",$data);
-    for($i=0;$i<3;$i++){
+    for($i=0;$i<2;$i++){
         echo $array[$i]."<br/>";
     }
 }
